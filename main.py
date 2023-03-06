@@ -19,9 +19,3 @@ df.to_csv("families.csv", index=False, sep=",")                 #Write the data 
 
 xw.view(df)
 
-print("Change")
-print("Change2")
-print("This is a commit and push to github")
-print("This is a commit and push to github")
-print("I am going to do another push")
-
