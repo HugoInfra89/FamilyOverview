@@ -16,7 +16,7 @@ def generate_gui(guiname="DefaultName", max_family_size=0):
                   ]
 
     #Make the window
-    window = psg.Window(title=f"Overview of families of {guiname}", layout=layout_gui)
+    window = psg.Window(title=f"Overview of families of {guiname}", layout=layout_gui, font=("Helvitica", 16))
     window.read()
     window.close()
 
