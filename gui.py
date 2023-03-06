@@ -6,8 +6,8 @@ def generate_gui(guiname="DefaultName", max_family_size=0):
     label1 = psg.Text("This is example text:")
     label2 = psg.Text(max_family_size)
     label3 = psg.Text("Maximum family size:")
-    input_box = psg.InputText("Please enter the data size of the family")
-    select_button = psg.Button("Select Family")
+    input_box = psg.InputText(key="input")
+    select_button = psg.Button("Family")
 
     # Make the layout of the window
     layout_gui = [[label1, label2],
@@ -16,8 +16,20 @@ def generate_gui(guiname="DefaultName", max_family_size=0):
                   ]
 
     #Make the window
-    window = psg.Window(title=f"Overview of families of {guiname}", layout=layout_gui, font=("Helvitica", 16))
-    window.read()
+    window = psg.Window(title=f"Overview of families of {guiname}",
+                        layout=layout_gui,
+                        font=("Helvitica", 12))
+
+    while True:
+        labelname, dict = window.read()
+        print(labelname)
+        print(dict)
+        match labelname:
+            case "Family":
+                print("This is a Family event")
+                break
+
+
     window.close()
 
 
