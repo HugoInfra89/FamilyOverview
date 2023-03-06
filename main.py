@@ -19,5 +19,3 @@ df.to_csv("families.csv", index=False, sep=",")                 #Write the data 
 
 xw.view(df)
 
-print("This is a test for GITHub desktop")
-
