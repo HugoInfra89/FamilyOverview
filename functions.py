@@ -56,31 +56,8 @@ def get_families_from_csv():
     df_csv_data.to_csv("families.csv")
     return df_csv_data["filename and filesize"]
 
-def check_file_paths():
-    df_csv_data = pd.read_csv("families.csv")
-    print(df_csv_data)
-    for i, row in df_csv_data.iterrows():
-        filepath=row["filepath"]
-        # filepath = filepath.replace(" ","_")
-
-        import os
-        absolute_path = os.path.abspath(filepath)
-        print(absolute_path)
-
-        normalized_path = os.path.normpath(filepath)
-        print(normalized_path)
-
-        if os.path.isfile(normalized_path):
-            print("File exists.")
-            os.system(normalized_path)
-        else:
-            print("File does not exist.")
-
-
 def open_selected_families(dict_of_selected_families):
     print(dict_of_selected_families)
-
-    breakpoint()
 
     selected_family = dict_of_selected_families['family_selection'][0]
 

@@ -1,4 +1,4 @@
-from functions import rfa_selection, makelist_in_txt, readtxt_select_to_df, set_max_bytes, open_selected_families, check_file_paths
+from functions import rfa_selection, makelist_in_txt, readtxt_select_to_df, set_max_bytes, open_selected_families
 from gui import generate_gui
 import os as os
 import pandas as pd
@@ -18,7 +18,4 @@ max_bytes = set_max_bytes()
 df = readtxt_select_to_df(txt_file="txt_file.txt", max_bytes=max_bytes)     #Makes a dataframe with only the families which are larger than ... bytes
 df.to_csv("families.csv", index=False, sep=",")                             #Write the data to a csv file
 selected_families = generate_gui(max_family_size=max_bytes)                 #Generates a GUI and returns a dictionary with selected familes.
-
-breakpoint()
-
-open_selected_families(dict_of_selected_families=selected_families)
+open_selected_families(dict_of_selected_families=selected_families)         #Open the selected family

@@ -1,4 +1,5 @@
 ,filename,filepath,filesize,filename and filesize
-0,00.00_GA_noordpijl_3D.rfa,families\00.00_GA_noordpijl_3D.rfa,458752,"00.00_GA_noordpijl_3D.rfa, bytes=458752"
-1,00.11_TAG-GA_element_nummer.rfa,families\00.11_TAG-GA_element_nummer.rfa,372736,"00.11_TAG-GA_element_nummer.rfa, bytes=372736"
-2,00.11_TAG-GA_legenda.rfa,families\00.11_TAG-GA_legenda.rfa,364544,"00.11_TAG-GA_legenda.rfa, bytes=364544"
+0,EHT_DI_53_CW_Hulppostkast_type_C.rfa,families\EHT_DI_53_CW_Hulppostkast_type_C.rfa,46452736,"EHT_DI_53_CW_Hulppostkast_type_C.rfa, bytes=46452736"
+1,EHT_DI_53_Hulppost type A_Noodarmatuur.rfa,families\EHT_DI_53_Hulppost type A_Noodarmatuur.rfa,1970176,"EHT_DI_53_Hulppost type A_Noodarmatuur.rfa, bytes=1970176"
+2,EHT_DI_61_CCTV Camera.rfa,families\EHT_DI_61_CCTV Camera.rfa,1495040,"EHT_DI_61_CCTV Camera.rfa, bytes=1495040"
+3,EHT_DI_63_CO_Luidspreker.rfa,families\EHT_DI_63_CO_Luidspreker.rfa,581632,"EHT_DI_63_CO_Luidspreker.rfa, bytes=581632"
